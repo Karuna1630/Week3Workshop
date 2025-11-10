@@ -106,15 +106,23 @@
             //}
 
 
-            // Finding the sum of all elements in an array using a foreach loop.
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int totalSum = 0;
-
-            foreach (int num in numbers)
+            //Task 6 : Try Catch Finally
+          
+            try
             {
-                totalSum += num;
+                Console.WriteLine("Please Enter a Number.");
+                int input = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("You entered: " + input);
+
             }
-            Console.WriteLine("The sum of all elements in the array is: " + totalSum);
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid number format.");
+            }
+            finally
+            {
+                Console.WriteLine("Program Executed");
+            }
         }
 
         //public class Operators
