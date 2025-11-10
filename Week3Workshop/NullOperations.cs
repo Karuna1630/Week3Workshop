@@ -21,6 +21,12 @@ namespace Week3Workshop
            //Null coalescing operator (??)
             string result2 = userName ?? "Username is not available";
             Console.WriteLine(result2);
+
+            //Null-Coalescing Assignment Operator(??=)
+            userName ??= "Karuna Giri";
+            Console.WriteLine($"UserName: {userName}");
+
+
         }
     }
 
