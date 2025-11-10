@@ -25,7 +25,13 @@ namespace Week3Workshop
         {
             return a / b;
         }
-    }
 
+
+        public string FindOddEven(int number)
+        {
+            return number % 2 == 0 ? "Even" : "Odd";
+        }
+
+    }
 }
 
