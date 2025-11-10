@@ -4,8 +4,11 @@
     {
         static void Main(string[] args)
         {
+
             Operators operators = new Operators();
             NullOperations NullOperators = new NullOperations();
+
+            //calling arithmetic operation methods
             Console.WriteLine("Addition: " + operators.Add(5, 3));
             Console.WriteLine("Subtraction: " + operators.Subtract(5, 3));
             Console.WriteLine("Multiplication: " + operators.Multiply(5, 3));
