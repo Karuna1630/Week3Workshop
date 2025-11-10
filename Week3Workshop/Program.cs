@@ -37,42 +37,52 @@
             //}
 
 
-            // Task 4: If else and Switch 
-            Console.WriteLine("Enter a number (1-7) for day of the week: ");
-            int dayNumber = int.Parse(Console.ReadLine());
+            //// Task 4: If else and Switch 
+            //Console.WriteLine("Enter a number (1-7) for day of the week: ");
+            //int dayNumber = int.Parse(Console.ReadLine());
 
-            //Using switch statement
-            switch (dayNumber)
+            ////Using switch statement
+            //switch (dayNumber)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Sunday");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Monday");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Tuesday");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Wednesday");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Thursday");
+            //        break;
+            //    case 6:
+            //        Console.WriteLine("Friday");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine("Saturday");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid day number");
+            //        break;
+            //}
+
+            //Task 5 : Loops
+            //Ask user to input a number N for sum calculation
+            Console.WriteLine("Enter a Number N: ");
+            int N = int.Parse(Console.ReadLine());
+
+            //Calculate the sum of numbers from 1 to N using a for loop
+            int sum = 0;
+            for (int i = 1; i <= N; i++)
             {
-                case 1:
-                    Console.WriteLine("Sunday");
-                    break;
-                case 2:
-                    Console.WriteLine("Monday");
-                    break;
-                case 3:
-                    Console.WriteLine("Tuesday");
-                    break;
-                case 4:
-                    Console.WriteLine("Wednesday");
-                    break;
-                case 5:
-                    Console.WriteLine("Thursday");
-                    break;
-                case 6:
-                    Console.WriteLine("Friday");
-                    break;
-                case 7:
-                    Console.WriteLine("Saturday");
-                    break;
-                default:
-                    Console.WriteLine("Invalid day number");
-                    break;
-
-
-
-
+                sum += i;
             }
+            Console.WriteLine("The sum of numbers from 1 to " + N + " is: " + sum);
+
         }
 
         //public class Operators
