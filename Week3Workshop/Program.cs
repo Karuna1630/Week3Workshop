@@ -75,7 +75,7 @@
             //Console.WriteLine("Enter a Number N: ");
             //int N = int.Parse(Console.ReadLine());
 
-            ////Calculate the sum of numbers from 1 to N using a for loop
+            ////Calculating the sum of numbers from 1 to N using a for loop
             //int sum = 0;
             //for (int i = 1; i <= N; i++)
             //{
@@ -83,30 +83,38 @@
             //}
             //Console.WriteLine("The sum of numbers from 1 to " + N + " is: " + sum);
 
-            // Print numbers from 1 to 20 using while loop
-            Console.WriteLine("\nPrinting numbers from 1 to 20:");
-            int number = 1;
-            while (number <= 20)
+            //// Printing numbers from 1 to 20 using while loop
+            //Console.WriteLine("\nPrinting numbers from 1 to 20:");
+            //int number = 1;
+            //while (number <= 20)
+            //{
+            //    // Stop when number is 15
+            //    if (number == 15)
+            //    {
+            //        break;
+            //    }
+
+            //    // Skip multiples of 4
+            //    if (number % 4 == 0)
+            //    {
+            //        number++;
+            //        continue;
+            //    }
+
+            //    Console.WriteLine(number);
+            //    number++;
+            //}
+
+
+            // Finding the sum of all elements in an array using a foreach loop.
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int totalSum = 0;
+
+            foreach (int num in numbers)
             {
-                // Stop when number is 15
-                if (number == 15)
-                {
-                    break;
-                }
-
-                // Skip multiples of 4
-                if (number % 4 == 0)
-                {
-                    number++;
-                    continue;
-                }
-
-                Console.WriteLine(number);
-                number++;
+                totalSum += num;
             }
-
-
-
+            Console.WriteLine("The sum of all elements in the array is: " + totalSum);
         }
 
         //public class Operators
