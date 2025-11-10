@@ -106,23 +106,54 @@
             //}
 
 
-            //Task 6 : Try Catch Finally
-          
+            //// Finding the sum of all elements in an array using a foreach loop.
+            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //int totalSum = 0;
+
+            //foreach (int num in numbers)
+            //{
+            //    totalSum += num;
+            //}
+            //Console.WriteLine("The sum of all elements in the array is: " + totalSum);
+
+
+            ////Task 6 : Try Catch Finally
+
+            //try
+            //{
+            //    Console.WriteLine("Please Enter a Number.");
+            //    int input = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("You entered: " + input);
+
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Invalid number format.");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Program Executed");
+            //}
+
+            //Task 7: Password Validation with Exception
             try
             {
-                Console.WriteLine("Please Enter a Number.");
-                int input = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("You entered: " + input);
+                Console.WriteLine("Enter a password: ");
+                string password = Console.ReadLine();
 
+                if (password.Length < 6)
+                {
+                    throw new Exception("Password must be at least 6 characters.");
+                }
+
+                Console.WriteLine("Password satisfied the requirement");
             }
-            catch (FormatException)
+            catch (Exception ex)
             {
-                Console.WriteLine("Invalid number format.");
+                Console.WriteLine(ex.Message);
             }
-            finally
-            {
-                Console.WriteLine("Program Executed");
-            }
+
+
         }
 
         //public class Operators
