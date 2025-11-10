@@ -18,6 +18,9 @@ namespace Week3Workshop
 
             Console.WriteLine(result);
 
+           //Null coalescing operator (??)
+            string result2 = userName ?? "Username is not available";
+            Console.WriteLine(result2);
         }
     }
 
