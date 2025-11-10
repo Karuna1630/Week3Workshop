@@ -9,7 +9,7 @@
             Console.WriteLine("Subtraction: " + operators.Subtract(5, 3));
             Console.WriteLine("Multiplication: " + operators.Multiply(5, 3));
             Console.WriteLine("Division: " + operators.Divide(6, 3));
-            Console.WriteLine("Find Odd/Even: " + operators.FindOddEven(5));
+            Console.WriteLine("Find Odd or Even (5): " + operators.FindOddEven(5));
 
 
         }
