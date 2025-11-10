@@ -70,18 +70,42 @@
             //        break;
             //}
 
-            //Task 5 : Loops
-            //Ask user to input a number N for sum calculation
-            Console.WriteLine("Enter a Number N: ");
-            int N = int.Parse(Console.ReadLine());
+            ////Task 5 : Loops
+            ////Ask user to input a number N for sum calculation
+            //Console.WriteLine("Enter a Number N: ");
+            //int N = int.Parse(Console.ReadLine());
 
-            //Calculate the sum of numbers from 1 to N using a for loop
-            int sum = 0;
-            for (int i = 1; i <= N; i++)
+            ////Calculate the sum of numbers from 1 to N using a for loop
+            //int sum = 0;
+            //for (int i = 1; i <= N; i++)
+            //{
+            //    sum += i;
+            //}
+            //Console.WriteLine("The sum of numbers from 1 to " + N + " is: " + sum);
+
+            // Print numbers from 1 to 20 using while loop
+            Console.WriteLine("\nPrinting numbers from 1 to 20:");
+            int number = 1;
+            while (number <= 20)
             {
-                sum += i;
+                // Stop when number is 15
+                if (number == 15)
+                {
+                    break;
+                }
+
+                // Skip multiples of 4
+                if (number % 4 == 0)
+                {
+                    number++;
+                    continue;
+                }
+
+                Console.WriteLine(number);
+                number++;
             }
-            Console.WriteLine("The sum of numbers from 1 to " + N + " is: " + sum);
+
+
 
         }
 
